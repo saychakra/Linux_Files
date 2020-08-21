@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sayan/.oh-my-zsh"
+export PATH=~/.npm-global/bin:$PATH
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -117,6 +118,8 @@ alias pyp="python3 -m pip install"
 alias pyf="cd /home/sayan/Documents/python"
 alias javaf="cd /home/sayan/Documents/java"
 alias cppf="cd /home/sayan/Documents/c++"
+alias jsf="cd /home/sayan/Documents/JS"
+alias cpf="cd /home/sayan/Documents/cp"
 alias cls="clear"
 alias jn="jupyter notebook"
 alias c11="g++ -std=c++11"
