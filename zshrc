@@ -111,9 +111,9 @@ mkcd () {
   esac
 }
 
-
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get upgrade -y"
+alias ugup="sudo apt-get upgrade -y && update"
 alias pyp="python3 -m pip install"
 alias pyf="cd /home/sayan/Documents/python"
 alias javaf="cd /home/sayan/Documents/java"
