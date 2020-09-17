@@ -69,7 +69,13 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+
+ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,12 +120,14 @@ mkcd () {
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get upgrade -y"
 alias ugup="sudo apt-get upgrade -y && update"
+alias upug="sudo apt-get update && sudo apt-get upgrade -y"
 alias pyp="python3 -m pip install"
 alias pyf="cd /home/sayan/Documents/python"
 alias javaf="cd /home/sayan/Documents/java"
 alias cppf="cd /home/sayan/Documents/c++"
 alias jsf="cd /home/sayan/Documents/JS"
 alias cpf="cd /home/sayan/Documents/cp"
+alias howdyf="cd /lib/security/howdy"
 alias cls="clear"
 alias jn="jupyter notebook"
 alias c11="g++ -std=c++11"
@@ -130,3 +138,4 @@ alias env="source env/bin/activate"
 alias q="exit"
 alias a="./a.out"
 alias gpom="git push origin master"
+alias gc="git commit -m"
