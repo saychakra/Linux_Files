@@ -1,5 +1,6 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
-" set number
+" <!- for enabling both absolute and relative numbering ->
+set number
 set relativenumber
 set autoindent
 set smartindent
