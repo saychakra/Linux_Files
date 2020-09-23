@@ -8,11 +8,13 @@ set relativenumber
 set autoindent
 set smartindent
 set tabstop=4
+set background=dark
+set termguicolors
 set softtabstop=0 noexpandtab
 set shiftwidth=4
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mouse=a
-colorscheme torte
+colorscheme deep-space
 
 " <!----------------------------" for global copy"----------------------------------------!>
 set clipboard+=unnamedplus

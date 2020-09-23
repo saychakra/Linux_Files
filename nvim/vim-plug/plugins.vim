@@ -20,4 +20,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ervandew/supertab'
     " Syntax highlighting
     Plug 'scrooloose/syntastic'
+    " Gotham colorscheme
+    Plug 'whatyouhide/vim-gotham'
+    " Deep-Space colorscheme
+    Plug 'tyrannicaltoucan/vim-deep-space' 
+    " Airline and Airline theme
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
