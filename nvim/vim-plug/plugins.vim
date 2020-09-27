@@ -20,11 +20,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ervandew/supertab'
     " Syntax highlighting
     Plug 'scrooloose/syntastic'
+    """"""""""""""""""" colorscheme Plugins """""""""""""""""""
     " Gotham colorscheme
     Plug 'whatyouhide/vim-gotham'
     " Deep-Space colorscheme
     Plug 'tyrannicaltoucan/vim-deep-space' 
+    " ayu light and dark colorschemes
+    Plug 'ayu-theme/ayu-vim'
+
     " Airline and Airline theme
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+
+    " for commenting
+    Plug 'tpope/vim-commentary'
 call plug#end()
