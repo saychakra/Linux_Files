@@ -17,8 +17,8 @@ My personal configuration files for
 1. If CoC is being used then, there can be some problems for clangd. Follow the instructions of installation of clangd as mentioned here:
 https://clangd.llvm.org/installation.html <br>
 After that do a CocInstall coc-clangd. If required run the CocCommand if prompted.<br>
--- Reasons:
-    clangd is available on snapcraft, PLEASE do not install it. It is old and installed in a the /snap directory which will require to create symlinks to the user/bin folder. All the more the clang server is broken and does not start up. <br>
-    Install clang-latest version from the link provided and run the commands mentioned below to run clangd10 or clangd11 as the default clangd command.
+    Reasons:<br>
+        - clangd is available on snapcraft, PLEASE do not install it. It is old and the application gets installed in the /snap directory which will require to create symlinks to the user/bin folder. All the more the clang server is broken and does not start up. <br>
+        - Install clang-latest version from the link provided and run the commands mentioned below to run clangd10 or clangd11 as the default clangd command.
 
 
