@@ -44,6 +44,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-commentary'
 
 
+    """""""""""""""""""""""""""""""""""" Conquer of Completion """"""""""""""""""""""""""""""""""""
     " CoC Plugin
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

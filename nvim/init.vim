@@ -26,8 +26,12 @@ let ayucolor="dark"   " for dark version of theme
 set clipboard+=unnamedplus
 
 " <!----------------------------" g++ compile C++ files and running them "----------------------------------------!>
-autocmd vimEnter *.cpp map <F3> :w <CR> :!clear ; g++ --std=c++17 % && gnome-terminal <CR>
 autocmd vimEnter *.cpp map <F2> :w <CR> :!g++ --std=c++17 % <CR>
+autocmd vimEnter *.cpp map <F3> :w <CR> :!clear ; g++ --std=c++17 % && gnome-terminal <CR>
+
+" <!----------------------------" Compiling and running java programs "----------------------------------------!>
+autocmd vimEnter *.java map <F2> :w <CR> :!javac % <CR>
+autocmd vimEnter *.java map <F3> :w <CR> :!clear ; javac % && gnome-terminal <CR>
 
 " <!----------------------------" Syntax checking "----------------------------------------!>
 set statusline+=%#warningmsg#
