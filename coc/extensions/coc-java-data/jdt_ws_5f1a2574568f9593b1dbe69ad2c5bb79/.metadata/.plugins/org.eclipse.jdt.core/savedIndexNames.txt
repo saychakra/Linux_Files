@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/home/sayan/.config/coc/extensions/coc-java-data/jdt_ws_5f1a2574568f9593b1dbe69ad2c5bb79/.metadata/.plugins/org.eclipse.jdt.core
+3842426239.index

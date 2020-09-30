@@ -705,5 +705,34 @@
     },
     "INTERPRETERS_CACHE_v3_PipEnvService": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/sayan/Documents/cp/codeforces": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:9cad518de25492883faa5e4e0837cba6": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:9cad518de25492883faa5e4e0837cba6": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/sayan/Documents/cp/codeforces": {
+      "architecture": 3,
+      "path": "/usr/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "307a3848f40cd13388f5e947a88e193c5832f31a14e284c06bf96c27ea3e98a4134ff3fc42a80f0b7d1b7d0222c6f6c501d7f6038ebf19a3fd32333a9581e3f7",
+      "type": "Unknown"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
   }
 }

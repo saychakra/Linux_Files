@@ -1,11 +1,12 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plug-config/coc.vim
 
 set encoding=utf-8
 set modifiable " ma could have also done!
 " <!- for enabling both absolute and relative numbering ->
 set number
 set relativenumber
-" set autoindent
+set autoindent
 set smartindent
 set tabstop=4
 set background=dark
@@ -53,11 +54,11 @@ nmap <C-f> :NERDTreeToggle %<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
-""""""""""""""""""""""""""""" Setting a few other key mappings """""""""""""""""""""""""""""
+" """"""""""""""""""""""""""""" Setting a few other key mappings """""""""""""""""""""""""""""
 
-" for moving lines up and down
-xnoremap <C-Up> :move '<-2<CR>gv-gv
-xnoremap <C-Down> :move '>+1<CR>gv-gv
+" " for moving lines up and down
+" xnoremap <C-Up> :move '<-2<CR>gv-gv
+" xnoremap <C-Down> :move '>+1<CR>gv-gv
 
 " for easy split navigation by removing default extra C-W keypress
 nnoremap <C-h> <C-W>h
@@ -66,5 +67,3 @@ nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
 
 
-" Sourcing the config file for CoC
-source $HOME/.config/nvim/plug-config/coc.vim
