@@ -15,13 +15,13 @@ set softtabstop=0 noexpandtab
 set shiftwidth=4
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mouse=a
-colorscheme gruvbox
+" colorscheme gruvbox
 
 """""" For Ayu colorscheme """"""
 let ayucolor="light"  " for light version of theme
 let ayucolor="mirage" " for mirage version of theme
 let ayucolor="dark"   " for dark version of theme
-" colorscheme ayu
+colorscheme ayu
 
 " <!----------------------------" for global copy"----------------------------------------!>
 set clipboard+=unnamedplus
@@ -29,6 +29,11 @@ set clipboard+=unnamedplus
 " <!----------------------------" g++ compile C++ files and running them "----------------------------------------!>
 autocmd vimEnter *.cpp map <F2> :w <CR> :!g++ --std=c++17 % <CR>
 autocmd vimEnter *.cpp map <F3> :w <CR> :!clear ; g++ --std=c++17 % && gnome-terminal <CR>
+
+" TODO: figure out some kind of way to detect the extension of the filetype in
+" the buffer and trigger the function automatically instead of a generic
+" keymap
+map <F3> :w <CR> :!clear ; g++ --std=c++17 % && gnome-terminal <CR>
 
 " <!----------------------------" Compiling and running java programs "----------------------------------------!>
 autocmd vimEnter *.java map <F2> :w <CR> :!javac % <CR>
