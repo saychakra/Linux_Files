@@ -43,6 +43,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " for commenting
     Plug 'tpope/vim-commentary'
 
+    " for startify 
+    Plug 'mhinz/vim-startify' 
 
     """""""""""""""""""""""""""""""""""" Conquer of Completion """"""""""""""""""""""""""""""""""""
     " CoC Plugin
