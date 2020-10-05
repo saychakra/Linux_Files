@@ -16,6 +16,8 @@ set shiftwidth=4
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mouse=a
 " colorscheme gruvbox
+" colorscheme deep-space
+
 
 """""" For Ayu colorscheme """"""
 let ayucolor="light"  " for light version of theme
@@ -33,7 +35,8 @@ autocmd vimEnter *.cpp map <F3> :w <CR> :!clear ; g++ --std=c++17 % && gnome-ter
 " TODO: figure out some kind of way to detect the extension of the filetype in
 " the buffer and trigger the function automatically instead of a generic
 " keymap
-map <F3> :w <CR> :!clear ; g++ --std=c++17 % && gnome-terminal <CR>
+nmap <F3> :w <CR> :!clear ; g++ --std=c++17 % && gnome-terminal <CR>
+nmap <F2> :w <CR> :!clear ; g++ --std=c++17 % <CR>
 
 " <!----------------------------" Compiling and running java programs "----------------------------------------!>
 autocmd vimEnter *.java map <F2> :w <CR> :!javac % <CR>
@@ -62,11 +65,16 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " """"""""""""""""""""""""""""" Setting a few other key mappings """""""""""""""""""""""""""""
 
 " " for moving lines up and down
-" xnoremap <C-Up> :move '<-2<CR>gv-gv
-" xnoremap <C-Down> :move '>+1<CR>gv-gv
+xnoremap <C-Up> :move '<-2<CR>gv-gv
+xnoremap <C-Down> :move '>+1<CR>gv-gv
 
 " for easy split navigation by removing default extra C-W keypress
 nnoremap <C-h> <C-W>h
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
+
+
+" for commenting lines
+nnoremap <C-_> :Commentary <CR>
+vnoremap <C-_> :Commentary <CR>
