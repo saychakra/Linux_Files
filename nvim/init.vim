@@ -4,17 +4,18 @@ source $HOME/.config/nvim/plug-config/coc.vim
 " set leader key
 let g:mapleader = "\<Space>"
 
-set encoding=utf-8                      " The encoding displayed
-set fileencoding=utf-8                  " The encoding written to file
 set modifiable                          " For making the current directory structure modifiable
 set number                              " Line numbers
 set relativenumber                      " Relative line numbers
 set autoindent                          " automatic indentations
 set smartindent                         " Makes indenting smart
-set ruler              			        " Show the cursor position all the time
+set encoding=utf-8                      " The encoding displayed
+set backspace=indent,eol,start          " Pressing backspace will shift with indentation
+set fileencoding=utf-8                  " The encoding written to file
 set iskeyword+=-                      	" treat dash separated words as a word text object
 set t_Co=256                            " Support 256 colors
 set background=dark                     " Setting background to dark
+set ruler              			        " Show the cursor position all the time
 set termguicolors                       " Setting terminal colors to match set colorschemes
 set cursorline                          " Enable highlighting of the current line
 set splitbelow                          " Horizontal splits will automatically be below
