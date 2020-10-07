@@ -1,0 +1,7 @@
+// this should be placed under the keybindings (Toolbar->Preferences->Key Bindings->paste)
+
+[
+	{ "keys": ["alt+o"], "command": "build" },
+	{ "keys": ["alt+p"], "command": "build", "args": { "variant": "Run" }},
+]
+
