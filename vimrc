@@ -12,8 +12,11 @@ set ruler              			        " Show the cursor position all the time
 set termguicolors                       " Setting terminal colors to match set colorschemes
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
-set tabstop=4                           " Insert 2 spaces for a single tab
 set clipboard=unnamedplus               " Copy paste between vim and everything else
+set tabstop=8                           " This always needs to be 8. Change any of the below ones for the tab width you want
+set softtabstop                         " vim provides a mixture of tabs and spaces of the required shiftwidth length
+set shiftwidth=4                        " This is for the tabstop you want
+set expandtab
 set mouse=a                             " Enabling mouse inside editor
 set autochdir                           " Your working directory will always be the same as your working directory
 colorscheme torte
