@@ -21,7 +21,7 @@ set cursorline                          " Enable highlighting of the current lin
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set tabstop=8                           " This always needs to be 8. Change any of the below ones for the tab width you want
-set softtabstop                         " vim provides a mixture of tabs and spaces of the required shiftwidth length
+set softtabstop=4                         " vim provides a mixture of tabs and spaces of the required shiftwidth length
 set shiftwidth=4                        " This is for the tabstop you want
 set expandtab                           " Converts tabs to spaces
 set smarttab                            " Smart tabs
@@ -29,7 +29,7 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set mouse=a                             " Enabling mouse inside editor
 set autochdir                           " Your working directory will always be the same as your working directory
-" colorscheme gruvbox
+colorscheme gruvbox
 " colorscheme deep-space
 
 
@@ -37,7 +37,7 @@ set autochdir                           " Your working directory will always be 
 let ayucolor="light"  " for light version of theme
 let ayucolor="mirage" " for mirage version of theme
 let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
+" colorscheme ayu
 
 " <!----------------------------" g++ compile C++ files and running them "----------------------------------------!>
 autocmd vimEnter *.cpp map <F2> :w <CR> :!g++ --std=c++17 % <CR>
