@@ -36,4 +36,9 @@ After that do a CocInstall coc-clangd. If required run the CocCommand if prompte
     `Required-by: ` <br>
   iii. Copy the path to jedi i.e. `/home/sayan/.local/lib/python3.6/site-packages`, in this case, to coc-settings.json inside ~/.config/nvim/coc-settings.json. <br>
 
-(Although I have pushed the changed to the coc-settings.json folder and copying it directly should work. But just in case)
+(Although I have pushed the changed to the coc-settings.json folder and copying it directly should work. But just in case) <br>
+
+
+### Turning off bluetooth by default while startup
+Just create a shell script file with content as `bluetooth off`. Open launcher -> startup application -> add the title and comment -> add the shell script in place of the command entry. <br>
+Test if it works (at least it was working last time in my machine!)
