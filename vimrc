@@ -19,6 +19,7 @@ set shiftwidth=4                        " This is for the tabstop you want
 set expandtab
 set mouse=a                             " Enabling mouse inside editor
 set autochdir                           " Your working directory will always be the same as your working directory
+set noswapfile                          " I don't need swapfiles all over the project directories!
 colorscheme torte
 " <!----------------------------" g++ compile C++ files and running them "----------------------------------------!>
 nnoremap <F2> :w <CR> :!g++ -std=c++17 % <CR>
