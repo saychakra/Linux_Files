@@ -29,6 +29,8 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set mouse=a                             " Enabling mouse inside editor
 set autochdir                           " Your working directory will always be the same as your working directory
+set incsearch                           " For incremental searching
+set noswapfile                          " I don't need swapfiles all over the project directories!
 colorscheme gruvbox
 " colorscheme deep-space
 
