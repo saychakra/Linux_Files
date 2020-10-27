@@ -11,7 +11,7 @@
 
             "linux": {
                 // "shell_cmd": "g++ -std=c++17 -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" && xterm -e '${file_path}/${file_base_name} && echo && echo Press ENTER to continue && read line && exit'",
-                "shell_cmd": "g++ -std=c++14 -Wall \"${file}\" && gnome-terminal \"${file_path}/${file_base_name}&& echo && echo Press ENTER to continue or exit && read line && exit\"", // for gnome-terminal
+                "shell_cmd": "g++ -std=c++17 -Wall \"${file}\" && gnome-terminal \"${file_path}/${file_base_name}&& echo && echo Press ENTER to continue or exit && read line && exit\"", // for gnome-terminal
                 // "shell_cmd": "g++ -std=c++11 -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" && xterm -e '${file_path}/${file_base_name}; bash'", // for xterm
                 // "shell_cmd": "g++ -std=c++11 -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" && xterm -hold -e ${file_path}/${file_base_name}", // for xterm
                 // "shell_cmd": "g++ -std=c++11 -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" && konsole --hold -e ${file_path}/./${file_base_name}", // for konsole
@@ -19,7 +19,7 @@
             },
 
             "windows":{
-                "shell_cmd":   "g++ -std=c++11 -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" && start cmd /k  $file_base_name ",
+                "shell_cmd":   "g++ -std=c++17 -Wall \"${file}\" && start cmd /k  a.exe ",
                 // "shell_cmd":   "g++ -std=c++11 -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" && start \"$file_base_name\" call $file_base_name"
             },
 
